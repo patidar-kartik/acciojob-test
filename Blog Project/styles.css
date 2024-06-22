@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-continer{
+    font-family: "Montserrat", sans-serif; 
+    background-color: #000000;
+    padding-bottom: 30px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FCAF02;
+    height: 86px;
+    width: 100%;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    padding: 0 40px;
+    z-index: 1;
+}
+.logo-sec span{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39.01px;
+}
+.logo-sec .up-text{
+    border-bottom: 3px solid black;
+}
+.link-sec ul{
+    display: flex;
+}
+.link-sec ul li{
+    list-style: none;
+    padding: 0px 15px;
+}
+.link-sec ul li a{
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34.13px;
+    color: #000000;
+}
+.startup-sec{
+    display: flex;
+    padding: 25px 40px;
+}
+.para-sec{
+    color:  #FFFFFF;
+    width: 100%;
+    justify-content: center;
+}
+h2,p,button{
+    margin-bottom: 25px;
+}
+button{
+    height: 50px;
+    width:200px;
+    background: #FCAF02;
+    border-radius: 30px;
+    border-style: none;
+}
+button a{
+    color: #000000;
+    font-weight: 700;
+    font-size:20px;
+    text-decoration: none;
+}
+.img-sec img{
+    height: 238px;
+    width: 550px;
+    transform: rotateY(180deg);
+    z-index: -1;
+}
+.form-sec{
+    padding: 25px 40px;
+}
+.form-sec h2{
+    color: #FCAF02;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.form-sec form{
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    margin-bottom: 5px;
+    text-align: left;
+    color: #FCAF02;
+}
+.row-sec{
+    display: flex;
+}
+.row-sec input{
+   width: 50%;
+}
+#mobile{
+    margin-right: 30px;
+}
+form input{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 3px solid #FCAF02;
+    border-radius:20px;
+    background-color:#000000 ;
+}
+form input::placeholder{
+    color:#FCAF02;
+    opacity: 1;
+}
+#submit{
+  margin: 20px auto;
+  font-weight: 700;
+  font-size:20px;
+  text-decoration: none;
+}
+.table-sec{
+    color: #FCAF02;
+    padding: 25px 40px;
+}
+.table-sec table{
+    border: 1px solid #FCAF02;
+    height: 500px;
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+table, th{
+    border: 1px solid #FCAF02   ;
+    text-align: center;
+}
+td{
+    border-right: 1px solid #FCAF02;
+    text-align: center;
+}
+.table-sec table tfoot{
+    background-color: #FCAF02;
+    color: #000000;
+}
+.right-border{
+    border-right: 1px solid #000000; 
+    font-weight: 600;
+}
