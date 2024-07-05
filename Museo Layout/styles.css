@@ -7,17 +7,11 @@
     overflow-x: hidden;
 }
 /* main-container css start */
-
 .main-container{
     background-color: #1A1C19;
     height: 100%;
     width: 100vw;
     padding: 20px;
-}
-li:hover{
-    background-color: #E0D6C2;
-    color: #333333;
-    transition: all 0.8;
 }
 
 /* main-container css end */
@@ -56,6 +50,13 @@ li:hover{
 #li-2 a{
     color: #333333;
 }
+li:hover{
+    background-color: #E0D6C2;
+    transition: all 0.8;
+}
+li:hover a{
+    color: #000000 !important;
+}
 
 /*header css end*/
 
@@ -75,6 +76,7 @@ li:hover{
 .box .img-sec{
     overflow-y: hidden;
     width: 100%;
+    border-radius: 30px;
 }
 .box img{
     width: 100%;
@@ -93,6 +95,14 @@ li:hover{
     flex-direction: column;
     gap: 15px;
     align-items: start;
+    overflow-y: hidden;
+}
+#box1 .img-sec,img{
+    height: 100%;
+    width: 100%;
+}
+#box1 h2{
+    height: 100px;
 }
 a{
     border: 1px solid #333333;
@@ -102,9 +112,11 @@ a{
     font-weight: 400;
     letter-spacing: -0.04em;
     line-height: 1;
+    overflow-y: hidden;
 }
 h2{
     font-size: 28px;
+    overflow-y: hidden
 }
 hr{
     height: 1px;
@@ -144,11 +156,15 @@ hr{
     align-items: start;
     gap: 15px;
 }
+
 #box2 > hr{
     margin-top: 10px;
 }
 #box2 > p{
     margin-top: 2rem;
+}
+#box2 img{
+    height: 100%;
 }
 #box3{
     background-color: #916E58;
@@ -166,7 +182,7 @@ hr{
 #box3:hover .under-line > div{
     background-color: black;
     animation-name: lineanimation;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 @keyframes lineanimation {
     0%{
@@ -205,3 +221,74 @@ hr{
     border-radius: 50px;
 }
 /* grid-container css end */
+
+/* responsive code start */
+
+@media screen and (max-width:840px) {
+    ul li{
+        display: none;
+    }
+    ul #li-1,#li-3{
+        display: inline-block;
+        overflow-y: hidden
+    }
+    ul #li-1{
+        width: 100vw;
+        text-align: center;
+    }    
+    #box1 h2{
+        height: 50px;
+    }
+   .grid-container{
+        grid-template-areas: 'congreve-street congreve-street congreve-street congreve-street congreve-street  congreve-street'
+        'europeana europeana europeana europeana europeana europeana'
+        'portrait-box portrait-box portrait-box europeana2 europeana2 europeana2';
+   }
+   #box1 .img-sec{
+        height: 240px;
+        width: 100%;
+        object-fit: cover;
+   }
+
+   #box2 .img-sec, #box3 .img-sec{
+        height: 280px;
+   }
+}
+
+@media screen and (max-width:540px) {
+    ul li{
+        display: none;
+    }
+    ul #li-1,#li-3{
+        display: inline-block;
+        text-align: center;
+        padding: 5px 10px;
+    }
+    ul #li-1{
+        width: 100vw;
+        text-align: center;
+    }
+    ul #li-3{
+        width: 100%;
+        height: 100%;
+    }
+    .para-sec{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-box{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    #box1 h2{
+        height: 70px;
+    }
+   .grid-container{
+        display: grid;
+        grid-template-areas: 'congreve-street congreve-street congreve-street congreve-street congreve-street  congreve-street'
+        'europeana europeana europeana europeana europeana europeana'
+        'portrait-box portrait-box portrait-box portrait-box portrait-box portrait-box  '
+        'europeana2 europeana2 europeana2 europeana2 europeana2 europeana2';
+   }
+}
+/* responsive code end */
